@@ -20,7 +20,7 @@ describe Dashing::Configuration do
   it { expect(instance.devise_allowed_models).to  be_empty }
 
   # Jobs
-  it { expect(instance.jobs_path.to_s).to    include('app/jobs') }
+  it { expect(instance.jobs_path.to_s).to    include('app/jobs/dashing') }
 
   # Dashboards
   it { expect(instance.default_dashboard).to      be_nil }

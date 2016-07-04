@@ -28,7 +28,7 @@ module Dashing
       end
 
       def copy_job
-        template 'jobs/sample.rb', 'app/jobs/sample.rb'
+        template 'jobs/sample.rb', 'app/jobs/dashing/sample.rb'
       end
 
     end

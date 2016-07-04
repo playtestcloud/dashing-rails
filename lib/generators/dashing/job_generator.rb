@@ -7,9 +7,8 @@ module Dashing
       desc 'Creates a new Dashing job.'
 
       def job
-        template 'jobs/new.rb', "app/jobs/#{file_name}.rb"
+        template 'jobs/new.rb', "app/jobs/dashing/#{file_name}.rb"
       end
-
     end
   end
 end
